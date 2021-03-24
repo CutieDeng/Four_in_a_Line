@@ -1,0 +1,44 @@
+[TOP]2021-03-23 20:44:07 : The Client is created.
+[TOP]2021-03-23 20:44:08 : The Client is created.
+[INFO]2021-03-23 20:44:11 : 1 time : Attempt to connect to the server [ip=127.0.0.1, port=9999]
+[TOP]2021-03-23 20:44:11 : Succeed to connect the server [ip=127.0.0.1, port=9999]
+[INFO]2021-03-23 20:44:14 : 1 time : Attempt to connect to the server [ip=localhost, port=9999]
+[TOP]2021-03-23 20:44:14 : Succeed to connect the server [ip=localhost, port=9999]
+[INFO]2021-03-23 20:44:14 : Succeed to create the IO stream.
+[TOP]2021-03-23 20:44:53 : The Client is created.
+[TOP]2021-03-23 20:44:58 : The Client is created.
+[INFO]2021-03-23 20:44:59 : 1 time : Attempt to connect to the server [ip=127.0.0.1, port=9999]
+[TOP]2021-03-23 20:44:59 : Succeed to connect the server [ip=127.0.0.1, port=9999]
+[INFO]2021-03-23 20:45:17 : 1 time : Attempt to connect to the server [ip=localhost, port=9999]
+[TOP]2021-03-23 20:45:17 : Succeed to connect the server [ip=localhost, port=9999]
+[INFO]2021-03-23 20:45:17 : Succeed to create the IO stream.
+[TOP]2021-03-23 20:47:01 : The Client is created.
+[TOP]2021-03-23 20:47:03 : The Client is created.
+[INFO]2021-03-23 20:47:04 : 1 time : Attempt to connect to the server [ip=127.0.0.1, port=9999]
+[TOP]2021-03-23 20:47:04 : Succeed to connect the server [ip=127.0.0.1, port=9999]
+[INFO]2021-03-23 20:47:07 : 1 time : Attempt to connect to the server [ip=localhost, port=9999]
+[TOP]2021-03-23 20:47:07 : Succeed to connect the server [ip=localhost, port=9999]
+[INFO]2021-03-23 20:47:07 : Succeed to create the IO stream.
+[INFO]2021-03-23 20:47:07 : Game begin!
+[INFO]2021-03-23 20:47:07 : Succeed to create the IO stream.
+[INFO]2021-03-23 20:47:07 : Game begin!
+[INFO]2021-03-23 20:47:08 : read something from the server. Class:WaitEvent
+[INFO]2021-03-23 20:47:08 : Now it's your turn.
+[INFO]2021-03-23 20:47:42 : You do an invalid click [0][3]
+[INFO]2021-03-23 20:47:43 : You do an invalid click [0][3]
+[INFO]2021-03-23 20:47:43 : You do an invalid click [0][3]
+[INFO]2021-03-23 20:47:43 : You do an invalid click [0][3]
+[INFO]2021-03-23 20:47:45 : You do an invalid click [0][6]
+[TOP]2021-03-23 20:49:21 : The Client is created.
+[TOP]2021-03-23 20:49:22 : The Client is created.
+[INFO]2021-03-23 20:49:23 : 1 time : Attempt to connect to the server [ip=127.0.0.1, port=9999]
+[TOP]2021-03-23 20:49:23 : Succeed to connect the server [ip=127.0.0.1, port=9999]
+[INFO]2021-03-23 20:49:30 : 1 time : Attempt to connect to the server [ip=localhost, port=9999]
+[TOP]2021-03-23 20:49:30 : Succeed to connect the server [ip=localhost, port=9999]
+[INFO]2021-03-23 20:49:30 : Succeed to create the IO stream.
+[INFO]2021-03-23 20:49:30 : Game begin!
+[INFO]2021-03-23 20:49:30 : Succeed to create the IO stream.
+[INFO]2021-03-23 20:49:30 : Game begin!
+[INFO]2021-03-23 20:49:30 : read something from the server. Class:WaitEvent
+[INFO]2021-03-23 20:49:30 : Now it's your turn.
+[INFO]2021-03-23 20:49:41 : You do an invalid click [0][2]

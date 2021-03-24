@@ -1,0 +1,18 @@
+[TOP]2021-03-23 20:44:11 : The Server is created.
+[INFO]2021-03-23 20:44:11 : Connect to the socket [/127.0.0.1:58142]
+[INFO]2021-03-23 20:44:14 : Connect to the socket [/127.0.0.1:58143]
+[TOP]2021-03-23 20:44:59 : The Server is created.
+[INFO]2021-03-23 20:44:59 : Connect to the socket [/127.0.0.1:59072]
+[INFO]2021-03-23 20:45:17 : Connect to the socket [/127.0.0.1:59082]
+[TOP]2021-03-23 20:47:04 : The Server is created.
+[INFO]2021-03-23 20:47:04 : Connect to the socket [/127.0.0.1:61929]
+[INFO]2021-03-23 20:47:07 : Connect to the socket [/127.0.0.1:61930]
+[INFO]2021-03-23 20:47:07 : Game content flushes.
+[INFO]2021-03-23 20:47:07 : Attempt to create the stream to socket [/127.0.0.1:61929]
+[INFO]2021-03-23 20:47:07 : Tell it to send a message to the server.
+[TOP]2021-03-23 20:49:23 : The Server is created.
+[INFO]2021-03-23 20:49:23 : Connect to the socket [/127.0.0.1:49807]
+[INFO]2021-03-23 20:49:30 : Connect to the socket [/127.0.0.1:49808]
+[INFO]2021-03-23 20:49:30 : Game content flushes.
+[INFO]2021-03-23 20:49:30 : Attempt to create the stream to socket [/127.0.0.1:49807]
+[INFO]2021-03-23 20:49:30 : Tell it to send a message to the server.
