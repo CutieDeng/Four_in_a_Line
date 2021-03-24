@@ -75,7 +75,7 @@ abstract public class LogInfo {
      * This method is used to get the LogLevel of the information.
      * @return The importance level of the information.
      */
-    public LogLevel getLogLevel(){
+    LogLevel getLogLevel(){
         return this.logLevel;
     }
 
@@ -83,7 +83,7 @@ abstract public class LogInfo {
      * This method is used to get the concrete content of the information.
      * @return The concrete content of the information.
      */
-    public String getContent(){
+    String getContent(){
         return this.content;
     }
 

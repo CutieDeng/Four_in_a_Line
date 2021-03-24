@@ -29,7 +29,7 @@ import java.time.format.DateTimeFormatter;
 abstract public class GameLog {
 
     final protected String getContent(LogInfo logInfo){
-        return String.format("[%5 s] [%s] %s", logInfo.getLogLevel(),
+        return String.format("[%s] [%s] %s", logInfo.getLogLevel(),
                 LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")),
                 logInfo.getContent());
     }
