@@ -1,76 +1,43 @@
 package GameMain.Frame;
 
 import GameMain.Console.ConsoleListener;
+import GameMain.Log.ClientLog;
 import GameMain.Log.GameLog;
-import GameMain.Log.LogLevel;
-import GameMain.Log.ServerLog;
-import GameMain.Log.SimpleLogInfo;
 
 import java.io.IOException;
-import java.net.ServerSocket;
-import java.util.Random;
+import java.net.Socket;
 import java.util.Scanner;
 
-public enum GameServer implements ConsoleListener {
+public enum GameClient implements ConsoleListener {
 
-    GAME_SERVER;
+    GAME_CLIENT;
 
     private GameLog log;
 
     {
-        log = new ServerLog();
+        log = new ClientLog();
     }
 
-    private ServerSocket socket;
-
-    private static final int DEFAULT_PORT = 41457;
-
-    private boolean createServer(int port){
-        try {
-            socket = new ServerSocket(port);
-            log.log(SimpleLogInfo.LogInfoBuild(
-                    String.format("ServerSocket is created, whose port is %d", port),
-                    LogLevel.DEBUG
-            ));
-        } catch (IOException e) {
-            log.log(SimpleLogInfo.LogInfoBuild(
-                    String.format("ServerSocket [ port = %d ] fails to be created.", port),
-                    LogLevel.DEBUG
-            ));
-            return false;
-        }
-        return true;
-    }
-
-    private static final Random random;
-    static {
-        random = new Random();
-    }
-
-    private boolean createServer(){
-        if (createServer(DEFAULT_PORT)){
-                return true;
-        }
-
-        boolean flag = true;
-        int testPort = -1;
-
-        while (flag){
-            testPort = 256 + random.nextInt(65536-256);
-            flag = !createServer(testPort);
-        }
-
-        System.out.println(String.format("Server is created [ port = %d ].", testPort));
-
-        return true;
-    }
-
-
-
-    private Scanner consoleInput;
+    private final Scanner consoleInput;
     {
         consoleInput = new Scanner(System.in);
     }
+
+    private Socket clientSocket = null;
+
+    private boolean connect(String ip, int port){
+        try {
+            clientSocket = new Socket(ip, port);
+            return true;
+        } catch (IOException e) {
+            return false;
+        }
+    }
+
+
+
+
+
 
     /**
      * This method would find a String which was input in console, and we would use
@@ -114,5 +81,19 @@ public enum GameServer implements ConsoleListener {
     @Override
     public void invoke(String commandLine) {
         commandLine = commandLine.trim();
+
+        if (commandLine.startsWith("connect(") && commandLine.endsWith(")")){
+
+            commandLine = commandLine.substring(8, commandLine.length()-1).trim();
+
+            String[] split = commandLine.split(":");
+            if (split.length == 1){
+
+            }
+            else if (split.length == 2){
+
+            }
+            return ;
+        }
     }
 }
