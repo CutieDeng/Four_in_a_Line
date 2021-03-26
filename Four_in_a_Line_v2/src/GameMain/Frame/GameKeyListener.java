@@ -26,6 +26,6 @@ public interface GameKeyListener {
      * want to place his piece.
      * @param keyInput The position you want to place then would send to the server.
      */
-    void sendKeyInput(int keyInput);
+    void sendKeyInput(byte keyInput);
 
 }
