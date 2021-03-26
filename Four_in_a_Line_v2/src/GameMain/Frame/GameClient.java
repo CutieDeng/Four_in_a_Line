@@ -35,10 +35,6 @@ public enum GameClient implements ConsoleListener {
     }
 
 
-
-
-
-
     /**
      * This method would find a String which was input in console, and we would use
      * another method to read it and perform it.
