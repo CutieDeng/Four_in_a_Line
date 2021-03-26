@@ -1,5 +1,8 @@
 package GameMain.Frame;
 
+import GameMain.GameComponent.GButton;
+import GameMain.GameComponent.GameKeyListener;
+import GameMain.GameComponent.GameLogic;
 import GameMain.Log.ClientLog;
 import GameMain.Log.GameLog;
 import GameMain.Log.LogLevel;
@@ -11,9 +14,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
+/**
+ * SingleGame is a class to create the game for a local personal computer.
+ * <p>
+ * It contains the game window, including the frame, the panel and some buttons.
+ * <p>
+ * You just use the method <em>void initialize()</em> to start a game.
+ * Other methods are what you shouldn't use in this class.
+ * @author Cutie
+ * @version 2021-03-26
+ */
+
 public class SingleGame implements GameKeyListener, GameLogic {
 
-    private static GameLog gameLog = new ClientLog();
+    private static final GameLog gameLog = new ClientLog();
 
     private JFrame gameFrame = null;
     private JPanel bodyPanel = null;
@@ -31,7 +45,7 @@ public class SingleGame implements GameKeyListener, GameLogic {
     private static final int DEFAULT_COLUMN = 10;
     private static final int DEFAULT_ROW = 10;
 
-    private static final Font font = new Font("Ink Free", Font.BOLD, 25);
+    private static final Font font = new Font("Ink Free", Font.BOLD, 32);
 
     private int column;
     private int row;
@@ -50,13 +64,17 @@ public class SingleGame implements GameKeyListener, GameLogic {
         gameFrame.setIconImage(
                 new ImageIcon("image\\logo.jpg", "ICON").getImage()
         );
+        gameFrame.setTitle("Four In a Line");
         gameFrame.setSize(DEFAULT_WIDTH, DEFAULT_HEIGHT);
         gameFrame.add(bodyPanel);
         String i1 = "The frame and panel is initialized well.";
         gameLog.log(SimpleLogInfo.LogInfoBuild(i1, LogLevel.TRACE));
     }
 
-    private void initial(){
+    /**
+     * This method would initialize the game arguments, and start the game soon.
+     */
+    public void initialize(){
         buttons = new GButton[DEFAULT_ROW][DEFAULT_COLUMN];
         nowPlace = new byte[DEFAULT_COLUMN];
         position = new byte[DEFAULT_ROW][DEFAULT_COLUMN];
@@ -91,11 +109,6 @@ public class SingleGame implements GameKeyListener, GameLogic {
 
         reset();
         gameFrame.setVisible(true);
-    }
-
-    public static void main(String[] args) {
-        SingleGame game = new SingleGame();
-        game.initial();
     }
 
     /**
@@ -286,6 +299,5 @@ public class SingleGame implements GameKeyListener, GameLogic {
             nowRow += rowMove;
             nowColumn += columnMove;
         }
-
     }
 }
